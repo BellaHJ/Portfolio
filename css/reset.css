@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* reset */
+html,body,iframe,header,footer,section,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,address,table,tr,th,td,caption,form,fieldset,legend,textarea,input,button,select{padding:0;margin:0;}
+img,iframe{border:0 none;} /* img : IE 10이하 */
+h1,h2,h3,h4,h5,h6,strong{font-weight:normal;}
+ul,ol,li{list-style:none;}
+address,em{font-style: normal;}
+img,button,a,span,em,i{vertical-align:top;}
+/* html5 reset */
+header,footer,nav,main,section,article,pre,blockquote{display:block;padding:0;margin:0;}
+/* form */
+fieldset,input,button,select{border:0 none;outline:none;}
+input:focus,select:focus,textarea:focus,button:focus{outline:none;}
+button{background:none;cursor:pointer;}
+input[type=text]{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+select{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear{display: none;}
+/* IE 에서 Select box 화살표 제거 */
+select::-ms-expand{display: none;}
+
+
+/* base */
+html,body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,figure,hr,input,textarea,button,select{word-break:keep-all;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;}
+header,footer,section,nav,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,figure,input,textarea,button,select{box-sizing:border-box;}
+table{width:100%;/*border-collapse:collapse;*/border-spacing:0;border:0 none;}
+caption,legend{overflow:hidden;width:0;height:0;font-size:0;line-height:0;text-indent: -5000px}
+a{text-decoration:none;color:#222222;}
+a:hover,a:link,a:visited{text-decoration:none;}
+input,button,select{vertical-align:top;outline:none;}
+input:focus {outline:none;}
+label{cursor:pointer;}
+span,strong,a,em,i{vertical-align:top;}
+
+/* Option */
+.screen_out{display:none;width:0;height:0;font-size:0;line-height:0;text-indent: -5000px} /* 화면에 크기와 관련된 디자인은 가리고 음성브라우저가 읽기 가능 */
+
+/* IE 폰트간격 차이 조정 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+  body{letter-spacing:0}
+}
