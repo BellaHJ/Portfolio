@@ -13,18 +13,19 @@
     <!-- 전화번호 검색 거부 -->
     <meta name="format-detection" content="telephone=no" />
     <!-- 기타 -->
-    <meta name="description" content="Bella Jin" - 웹 퍼블리셔 포트폴리오">
+    <meta name="description" content="Bella Jin - 웹 퍼블리셔 포트폴리오">
     <meta name="keywords" content="웹 퍼블리셔, 경력 웹 퍼블리셔, 웹 표준, 웹 접근, 벨라진, BellaJin, Bella Jin, 벨라 진, UI, UX, ">
     <meta name="Reply-To" content="syasya0707@gmail.com">
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico">
     <meta property="og:site_name" content="Bella Jin">
     <meta property="og:title" content="Bella Jin Portfolio">
     <meta property="og:description" content="경력 웹 퍼블리셔 포트폴리오">
-    <meta property="og:url" content="https://github.com/BellaHJ/Portfolio"><!-- 업로드 전 수정 필요 -->
-    <meta property="og:image" content="">
+    <meta property="og:url" content="https://bellahj.github.io/Portfolio/">
+    <meta property="og:image" content="https://bellahj.github.io/Portfolio/images/meta/ogImg.jpg">
     <meta name="twitter:title" content="Bella Jin">
     <meta name="twitter:description" content="경력 웹 퍼블리셔 포트폴리오">
-    <meta name="twitter:url" content="https://github.com/BellaHJ/Portfolio"><!-- 업로드 전 수정 필요 -->
-    <meta name="twitter:image" content="https://nykim.net/images/hotlink-ok/ogImage.png">
+    <meta name="twitter:url" content="https://bellahj.github.io/Portfolio/">
+    <meta name="twitter:image" content="https://bellahj.github.io/Portfolio/images/meta/twitterImg.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
@@ -34,25 +35,853 @@
 
     <title>Web Publisher Bella Jin</title>
 
+    <!-- jQuery Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <!-- css -->
-    <link rel="stylesheet" href="../css/style.css?ver=210501">
-    <!-- js -->
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <!-- Custom -->
-    <script src="../js/animate.js"></script>
-    <!-- plugIn -->
-    <link ref="stylesheet" href="plugin/scroll/jquery.mCustomScrollbar.min.css">
-    <script src="plugin/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link rel="stylesheet" href="./css/custom.css?ver=210501">
 </head>
 
 <body>
-    <header></header>
-    <div id="container">
-        <section id="main"></section>
+    <div class="quickGuide">
+        <p>읽기 전용 브라우저를 위한 빠른 이동 메뉴입니다.</p>
+        <ol>
+            <li>
+                <a href="#main">메인비주얼 컨텐츠</a>
+            </li>
+            <li>
+                <a href="#portfolio">포트폴리오</a>
+            </li>
+            <li>
+                <a href="#profile">프로필</a>
+            </li>
+        </ol>
     </div>
-    <footer id="footer">
-        <p class="copy">COPYRIGHT © Jeong Hye Jin. ALL RIGHT RESERVED.</p>
-    </footer>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="screen_out">Bella Jin's Portfolio</h1>
+            <a target="_blank" rel="noopener" title="메일 발송하기"
+                href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=syasya0707@gmail.com" class="mailLink"
+                aria-label="메일주소"><i class="far fa-envelope"></i> syasya0707@gmail.com</a>
+            <button type="button" class="scrollTopButton"></button>
+        </header>
+        <div id="fullpage">
+            <!-- main STT -->
+            <section id="main" class="section">
+                <div class="bg_cover"></div>
+                <div class="inner fCont fCenter fMiddle fColumn">
+                    <div class="textArea">
+                        <p class="mainText">Bella's Portfolio</p>
+                        <div class="textVisual"></div>
+                    </div>
+                    <div class="heartVisual">
+                        <div></div>
+                    </div>
+                    <figure class="quote">
+                        <blockquote>
+                            쉬운 일을 어려운 일처럼, 어려운 일을 쉬운 일처럼 대하라.<br>
+                            전자는 자신감이 잠들지 않게, 후자는 자신감을 잃지 않기 위함이다.
+                        </blockquote>
+                        <figcaption>
+                            &mdash; 17세기 예수회의 사제이자 신학교수,<br>
+                            <cite>발타사르 그라시안(Baltasar Gracian)</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="coverBox">
+                    <div class="bg"></div>
+                    <div class="text">
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="arrowBox">
+                    <span></span>
+                </div>
+            </section>
+            <!-- main END -->
+            <!-- portfolio STT -->
+            <section id="portfolio" class="section">
+                <h2><span>P</span>ortfolio</h2>
+                <div class="scrollArea">
+                    <div class="grid">
+                        <!-- item1 -->
+                        <div class="grid-item web">
+                            <img src="images/img1.png" alt="">
+                            <div class="txt">
+                                <h3>1472house</h3>
+                                <p>date : 2018<br>skills : HTML5, CSS3, jQuery</p>
+                                <a class="modalOpen" href="#item1">View</a>
+                            </div>
+                            <div id="item1" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img1_1.png" alt="1472house 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">1472house</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>건물임대관리 기업 대상으로 임대에 필요한 데이터 관리용 프로그램 제작</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>퍼블리싱, 테스터</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>랜딩홈페이지 디자인 및 제작</li>
+                                                    <li>웹 UI 개발</li>
+                                                    <li>Jquery 활용한 움직임 구현</li>
+                                                    <li>전체 기능 테스트</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AXGrid, Jquery, Awesome</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item2 -->
+                        <div class="grid-item web">
+                            <img src="images/img2.png" alt="">
+                            <div class="txt">
+                                <h3>V100</h3>
+                                <p>date : 2019<br>skills : HTML5, CSS3, jQuery</p>
+                                <a class="modalOpen" href="#item2">View</a>
+                            </div>
+                            <div id="item2" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img2_1.png" alt="V100 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">V100</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>보안시스템과 연동하여 보안 관련 데이터를 확인하는 모니터링 프로그램 제작</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>디자인 , 퍼블리싱, 테스터</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>기획문서 수정, 보완</li>
+                                                    <li>화면 설계 및 디자인</li>
+                                                    <li>AmCharts Library 활용 (샘플데이터 제작하여 화면 구현)</li>
+                                                    <li>Grid(Table) Library 활용 (샘플데이터 제작하여 화면 구현)</li>
+                                                    <li>웹 UI 개발</li>
+                                                    <li>전체 기능 테스트</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AmCharts, AXGrid, Jquery, Awesome</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item3 -->
+                        <div class="grid-item web">
+                            <img src="images/img3.png" alt="">
+                            <div class="txt">
+                                <h3>ALLEVER</h3>
+                                <p>date : 2019<br>skills : HTML5, CSS3, jQuery</p>
+                                <a class="modalOpen" href="#item3">View</a>
+                            </div>
+                            <div id="item3" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img3_1.png" alt="ALLEVER 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">ALLEVER</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>임차인 전용 카드 결제 사이트 제작 (관리자 화면 포함)</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>기획, 디자인, 퍼블리싱, 테스터</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>기획문서 수정, 보완</li>
+                                                    <li>화면 설계 및 디자인</li>
+                                                    <li>웹 UI 개발</li>
+                                                    <li>랜딩홈페이지 제작 (Bootstrap 기반 Template)</li>
+                                                    <li>로고 제작</li>
+                                                    <li>홍보용 블로그 글 작성 및 관련 이미지 제작 (배너, 홍보용, 이벤트 등)</li>
+                                                    <li>전체 기능 테스트</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AXGrid, Jquery, Awesome, datepicker</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item4 -->
+                        <div class="grid-item web">
+                            <img src="images/img4.png" alt="">
+                            <div class="txt">
+                                <h3>SMail</h3>
+                                <p>date : 2019<br>skills : HTML5, CSS3, jQuery</p>
+                                <a class="modalOpen" href="#item4">View</a>
+                            </div>
+                            <div id="item4" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img4_1.png" alt="SMail 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">SMail</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>기업 내부용 보안 메일 시스템 제작</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>디자인, 퍼블리싱</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>기획 문서에 따른 화면 디자인</li>
+                                                    <li>별도 제작된 보안용 브라우저 프로그램 전용 맞춤 (최신브라우저 기준 적용)</li>
+                                                    <li>웹 UI 개발</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AXGrid, Jquery, datepicker, suneditor, bootstrap</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item5 -->
+                        <div class="grid-item web">
+                            <img src="images/img5.png" alt="">
+                            <div class="txt">
+                                <h3>Global WiFi</h3>
+                                <p>date : 2019<br>skills : HTML5, CSS3, jQuery</p>
+                                <a class="modalOpen" href="#item5">View</a>
+                            </div>
+                            <div id="item5" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img5_1.png" alt="Global WiFi 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">Global WiFi</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>통신 단말기 렌탈 관리 시스템</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>기획, 디자인, 퍼블리싱</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>클라이언트와 수시 회의를 통한 시스템 기획</li>
+                                                    <li>기획문서, 스토리보드 및 화면설계서 제작</li>
+                                                    <li>화면 UI 구성 및 디자인</li>
+                                                    <li>웹 UI 개발</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AXGrid, Jquery, datepicker</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item6 -->
+                        <div class="grid-item web">
+                            <img src="images/img10.png" alt="">
+                            <div class="txt">
+                                <h3>V100 ver.2</h3>
+                                <p>date : 2020<br>skills : HTML5, CSS3, jQuery</p>
+                                <a class="modalOpen" href="#item10">View</a>
+                            </div>
+                            <div id="item10" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img10_1.png" alt="V100 ver.2 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">V100 ver.2</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>Vectra 와 연동하여 보안 관련 데이터를 확인하는 모니터링 및 관리 시스템</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>기획, 디자인, 퍼블리싱, 테스터</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>기획문서 수정, 보완</li>
+                                                    <li>화면 설계 및 디자인</li>
+                                                    <li>웹 UI 개발</li>
+                                                    <li>로고 제작</li>
+                                                    <li>전체 기능 테스트</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AXGrid, Jquery, datepicker, dropzone, remodal</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item7 -->
+                        <div class="grid-item web">
+                            <img src="images/img6.png" alt="">
+                            <div class="txt">
+                                <h3>EVER PAY</h3>
+                                <p>date : 2020<br>skills : HTML5, CSS3, jQuery</p>
+                                <a class="modalOpen" href="#item6">View</a>
+                            </div>
+                            <div id="item6" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img6_1.png" alt="EVER PAY 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">EVER PAY</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>생활형 카드 결제 플랫폼 제작</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>기획, 디자인, 퍼블리싱, 테스터</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>화면 설계 및 디자인</li>
+                                                    <li>웹 UI 개발</li>
+                                                    <li>랜딩홈페이지 제작</li>
+                                                    <li>로고 제작</li>
+                                                    <li>홍보용 블로그 글 작성 및 관련 이미지 제작 (배너, 홍보용, 이벤트 등)</li>
+                                                    <li>전체 기능 테스트</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AXGrid, Jquery, datepicker, dropzone, remodal</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item8 -->
+                        <div class="grid-item web">
+                            <img src="images/img7.png" alt="">
+                            <div class="txt">
+                                <h3>GManager</h3>
+                                <p>date : 2020<br>skills : HTML5, CSS3, jQuery</p>
+                                <a class="modalOpen" href="#item7">View</a>
+                            </div>
+                            <div id="item7" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img7_1.png" alt="GManager 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">GManager</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>URL Routing 관리 시스템 제작</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>기획, 퍼블리싱</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>화면설계</li>
+                                                    <li>웹 UI 개발</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AXGrid, Jquery, datepicker, dropzone, remodal</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item9 -->
+                        <div class="grid-item web">
+                            <img src="images/img9.png" alt="">
+                            <div class="txt">
+                                <h3>RootChain</h3>
+                                <p>date : 2020<br>skills : HTML5, CSS3, jQuery</p>
+                                <a class="modalOpen" href="#item9">View</a>
+                            </div>
+                            <div id="item9" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img9_1.png" alt="RootChain 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">RootChain</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>블록체인 관리 및 모니터링 시스템</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>디자인, 퍼블리싱</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>화면 디자인</li>
+                                                    <li>웹 UI 개발</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AXGrid, Jquery, datepicker, Awesome</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item10 -->
+                        <div class="grid-item web">
+                            <img src="images/img8.png" alt="">
+                            <div class="txt">
+                                <h3>FOTA Manager</h3>
+                                <p>date : 2020<br>skills : HTML5, CSS3, jQuery</p>
+                                <a class="modalOpen" href="#item8">View</a>
+                            </div>
+                            <div id="item8" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img8_1.png" alt="FOTA Manager 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">FOTA Manager</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>네트워크 장비 관리 시스템 제작</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>기획, 디자인, 퍼블리싱, 테스터</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>기획, 스토리보드, 화면설계</li>
+                                                    <li>웹 UI 개발</li>
+                                                    <li>랜딩홈페이지 제작</li>
+                                                    <li>전체 기능 테스트</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AXGrid, Jquery, datepicker</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item11 -->
+                        <div class="grid-item web">
+                            <img src="images/img1.png" alt="">
+                            <div class="txt">
+                                <h3>1472house 2차</h3>
+                                <p>date : 2020<br>skills : HTML5, CSS3, jQuery, JSP, MySQL</p>
+                                <a class="modalOpen" href="#item11">View</a>
+                            </div>
+                            <div id="item11" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img1_1.png" alt="1472house 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">1472house 2차</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>건물임대관리 기업 대상으로 임대에 필요한 데이터 관리용 프로그램 제작<br>(외주 개발 중단, 인수받아 추가 개발)</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>퍼블리싱, JSP개발, 테스터</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>전체 기능 테스트</li>
+                                                    <li>누락 기능 추가 개발 (MySQL)</li>
+                                                    <li>기능 버그 수정</li>
+                                                    <li>웹 UI 개발 (추가, 수정 등)</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>HTML5, CSS3, javascript, JSP, MySQL</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>AXGrid, Jquery, Awesome</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item12 -->
+                        <div class="grid-item web">
+                            <img src="images/img12.png" alt="">
+                            <div class="txt">
+                                <h3>RootChain ver.2</h3>
+                                <p>date : 2021<br>skills : React, javascript</p>
+                                <a class="modalOpen" href="#item12">View</a>
+                            </div>
+                            <div id="item12" class="modal">
+                                <div class="detailWrap">
+                                    <div class="imgArea"><img src="images/img12_1.png" alt="1472house 캡쳐 화면"></div>
+                                    <div class="infoArea">
+                                        <div class="projectName">RootChain ver.2</div>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>프로젝트</dt>
+                                            <dd>루트체인 시스템의 데이터 조회 사이트 제작</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>포지션</dt>
+                                            <dd>퍼블리싱</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>담당업무</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>React 환경 UI 개발 (Material UI, React Template, React Library 활용)
+                                                    </li>
+                                                    <li>Github 공유 협업</li>
+                                                    <li>디자인 파일 : Figma 공유 받음</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>기술</dt>
+                                            <dd>React, javascript</dd>
+                                        </dl>
+                                        <dl class="fCont fLeft fTop">
+                                            <dt>Library</dt>
+                                            <dd>Material UI</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- portfolio END -->
+            <!-- profile STT -->
+            <section id="profile" class="section">
+                <h2><span>P</span>rofile</h2>
+                <div class="inner">
+                    <div class="group">
+                        <!-- photo STT -->
+                        <div class="photo">
+                            <h3>Photo</h3>
+                            <p>프로필 사진이 배경으로 등록된 영역입니다.</p>
+                        </div>
+                        <!-- photo END -->
+                        <!-- skill STT-->
+                        <div class="skill">
+                            <h3>Skill</h3>
+                            <button type="button" class="foldingButton" data-open='false'>show</button>
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>HTML5</dt>
+                                        <dd>
+                                            <div class="count">95%<span><i class="fas fa-caret-down"></i></span></div>
+                                            <div class="progressWrap">
+                                                <div class="progressBar"></div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>CSS3</dt>
+                                        <dd>
+                                            <div class="count">85%<span><i class="fas fa-caret-down"></i></span></div>
+                                            <div class="progressWrap">
+                                                <div class="progressBar"></div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>JQuery</dt>
+                                        <dd>
+                                            <div class="count">85%<span><i class="fas fa-caret-down"></i></span></div>
+                                            <div class="progressWrap">
+                                                <div class="progressBar"></div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>Javascript</dt>
+                                        <dd>
+                                            <div class="count">60%<span><i class="fas fa-caret-down"></i></span></div>
+                                            <div class="progressWrap">
+                                                <div class="progressBar"></div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>React</dt>
+                                        <dd>
+                                            <div class="count">20%<span><i class="fas fa-caret-down"></i></span></div>
+                                            <div class="progressWrap">
+                                                <div class="progressBar"></div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- skill END-->
+                    </div>
+                    <!-- history STT -->
+                    <div class="history">
+                        <h3>History</h3>
+                        <div class="scrollArea">
+                            <!-- 업종 전환 후 -->
+                            <ol reversed>
+                                <!-- 기본 리스트 스타일 적용 시 역순 넘버링 -->
+                                <li>
+                                    <div class="topWrap">
+                                        <div class="period">2018.10 ~ 재직중</div>
+                                        <div class="title">주식회사더원케이</div>
+                                    </div>
+                                    <div class="detail">
+                                        <dl>
+                                            <dt>직급</dt>
+                                            <dd>사원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>담당 업무</dt>
+                                            <dd>웹 사이트 기획 수정/보완, 웹 UI 구성 및 디자인, 웹 UI 개발, 웹 사이트 기능 테스트, 자사 사이트 홍보용 이미지제작 및
+                                                블로그 글 작성</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="topWrap">
+                                        <div class="period">2018.07 ~ 2018.09</div>
+                                        <div class="title">(주)맑은에스</div>
+                                    </div>
+                                    <div class="detail">
+                                        <dl>
+                                            <dt>직급</dt>
+                                            <dd>사원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>담당 업무</dt>
+                                            <dd>웹 사이트 퍼블리싱</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="topWrap">
+                                        <div class="period">2018.03 ~ 2018.04</div>
+                                        <div class="title">BNC</div>
+                                    </div>
+                                    <div class="detail">
+                                        <dl>
+                                            <dt>직급</dt>
+                                            <dd>사원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>담당 업무</dt>
+                                            <dd>자사 사이트 퍼블리싱</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="topWrap">
+                                        <div class="period">2017.11 ~ 2018.03</div>
+                                        <div class="title">(주)위눌</div>
+                                    </div>
+                                    <div class="detail">
+                                        <dl>
+                                            <dt>직급</dt>
+                                            <dd>사원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>담당 업무</dt>
+                                            <dd>웹 사이트 유지보수</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ol>
+                            <div class="divider">
+                                <p><span>2017.04 ~ 2017.11</span>웹 퍼블리셔 교육 이수 후 업종 전환</p>
+                            </div>
+                            <!-- 업종 전환 전 -->
+                            <ol reversed>
+                                <!-- 기본 리스트 스타일 적용 시 역순 넘버링 -->
+                                <li>
+                                    <div class="topWrap">
+                                        <div class="period">2014.02 ~ 2017.03</div>
+                                        <div class="title">청송교육</div>
+                                    </div>
+                                    <div class="detail">
+                                        <dl>
+                                            <dt>직급</dt>
+                                            <dd>실장</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>담당 업무</dt>
+                                            <dd>인사관리, 회계관리, 영업관리</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="topWrap">
+                                        <div class="period">2014.02 ~ 2014.02</div>
+                                        <div class="title">(주)아진케이에스비</div>
+                                    </div>
+                                    <div class="detail">
+                                        <dl>
+                                            <dt>직급</dt>
+                                            <dd>사원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>담당 업무</dt>
+                                            <dd>회계 업무 보조</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="topWrap">
+                                        <div class="period">2013.12 ~ 2014.01</div>
+                                        <div class="title">세무법인티앤에이</div>
+                                    </div>
+                                    <div class="detail">
+                                        <dl>
+                                            <dt>직급</dt>
+                                            <dd>사원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>담당 업무</dt>
+                                            <dd>회계 업무 보조</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="topWrap">
+                                        <div class="period">2007.03 ~ 2010.05</div>
+                                        <div class="title">(주)레이코플러스</div>
+                                    </div>
+                                    <div class="detail">
+                                        <dl>
+                                            <dt>직급</dt>
+                                            <dd>사원</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>담당 업무</dt>
+                                            <dd>사무 보조 (회계, 영업관리)</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- history END-->
+                </div>
+            </section>
+            <footer id="footer" class="screen_out">
+                <p class="copy">COPYRIGHT © Jeong Hye Jin. ALL RIGHT RESERVED.</p>
+            </footer>
+        </div>
+    </div>
+    <!-- js -->
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="./js/animate.js"></script>
+    <!-- plugIn -->
+    <script type="text/javascript" src="./plugin/fullpage/scrolloverflow.js"></script>
+    <script type="text/javascript" src="./plugin/fullpage/fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="./plugin/scroll/jquery.mCustomScrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script type="text/javascript">
+        // fullpage
+        var myFullpage = new fullpage('#fullpage', {
+            css3: true,
+        });
+    </script>
 </body>
 
 </html>

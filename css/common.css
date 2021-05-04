@@ -1,7 +1,10 @@
 /* 레이아웃 */
-html,body,#wrap{font-family:'NanumSquareRound',sans-serif;overflow:hidden;width:100%;height:100%;}
-body{display:none;font-size:13px;color:#222;background-color:#eee;}
+html,body,#wrap{font-family:'NanumSquareRound',sans-serif;}
+body{font-size:14px;color:#222;}
 * { box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;}
+@media(max-width:760px){
+	body{font-size:12px;}
+}
 
 /** 공통 css **/
 .non_border{border:0 none !important;}
@@ -26,24 +29,11 @@ body{display:none;font-size:13px;color:#222;background-color:#eee;}
 .fr{float:right;}
 .clear::after{display:block;content:'';clear:both;}
 	/* font & text */
-.font_red{color:#f00;}
-.font_blue{color:#00a1e9;}
-.font_green{color:#23a42c;}
-.font_gray{color:#999;}
-.font_white{color:#fff;}
-.font_theme1{color:#5a8c83;}/* #fededf */
-.font_theme2{color:#444f53;}/* #fdc2be */
-.font_theme3{color:#b0a160;}/* #325a98  */
-.font_theme4{color:#ecce6e;}/* #233567 */
-.txt_l{text-align:left !important;}
-.txt_c{text-align:center !important;}
-.txt_r{text-align:right !important;}
-.fw700{font-weight:700;}
-a{color:#222;}
+a{color:#333;}
 .ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 
 /** 버튼 css **/
-.btn{display:inline-block;box-sizing:border-box;min-width:68px;padding:5px;font-size:14px;line-height:18px;}
+button{}
 
 /* Background */
 .bg_white{background-color:#fff;}
