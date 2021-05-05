@@ -35,8 +35,7 @@
 
     <title>Web Publisher Bella Jin</title>
 
-    <!-- jQuery Modal -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
     <!-- css -->
     <link rel="stylesheet" href="./css/custom.css?ver=210501">
 </head>
@@ -62,7 +61,6 @@
             <a target="_blank" rel="noopener" title="메일 발송하기"
                 href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=syasya0707@gmail.com" class="mailLink"
                 aria-label="메일주소"><i class="far fa-envelope"></i> syasya0707@gmail.com</a>
-            <button type="button" class="scrollTopButton"></button>
         </header>
         <div id="fullpage">
             <!-- main STT -->
@@ -101,7 +99,7 @@
             <!-- portfolio STT -->
             <section id="portfolio" class="section">
                 <h2><span>P</span>ortfolio</h2>
-                <div class="scrollArea">
+                <div class="listArea">
                     <div class="grid">
                         <!-- item1 -->
                         <div class="grid-item web">
@@ -643,16 +641,9 @@
                 <h2><span>P</span>rofile</h2>
                 <div class="inner">
                     <div class="group">
-                        <!-- photo STT -->
-                        <div class="photo">
-                            <h3>Photo</h3>
-                            <p>프로필 사진이 배경으로 등록된 영역입니다.</p>
-                        </div>
-                        <!-- photo END -->
                         <!-- skill STT-->
                         <div class="skill">
                             <h3>Skill</h3>
-                            <button type="button" class="foldingButton" data-open='false'>show</button>
                             <ul>
                                 <li>
                                     <dl>
@@ -712,11 +703,17 @@
                             </ul>
                         </div>
                         <!-- skill END-->
+                        <!-- photo STT -->
+                        <div class="photo">
+                            <h3>Photo</h3>
+                            <p>프로필 사진이 배경으로 등록된 영역입니다.</p>
+                        </div>
+                        <!-- photo END -->
                     </div>
                     <!-- history STT -->
                     <div class="history">
                         <h3>History</h3>
-                        <div class="scrollArea">
+                        <div class="listArea">
                             <!-- 업종 전환 후 -->
                             <ol reversed>
                                 <!-- 기본 리스트 스타일 적용 시 역순 넘버링 -->
@@ -728,12 +725,11 @@
                                     <div class="detail">
                                         <dl>
                                             <dt>직급</dt>
-                                            <dd>사원</dd>
+                                            <dd>대리</dd>
                                         </dl>
                                         <dl>
                                             <dt>담당 업무</dt>
-                                            <dd>웹 사이트 기획 수정/보완, 웹 UI 구성 및 디자인, 웹 UI 개발, 웹 사이트 기능 테스트, 자사 사이트 홍보용 이미지제작 및
-                                                블로그 글 작성</dd>
+                                            <dd>웹 사이트 기획 수정/보완, 웹 UI 구성 및 디자인, 웹 UI 개발, 웹 사이트 기능 테스트</dd>
                                         </dl>
                                     </div>
                                 </li>
@@ -874,14 +870,7 @@
     <!-- plugIn -->
     <script type="text/javascript" src="./plugin/fullpage/scrolloverflow.js"></script>
     <script type="text/javascript" src="./plugin/fullpage/fullpage.extensions.min.js"></script>
-    <script type="text/javascript" src="./plugin/scroll/jquery.mCustomScrollbar.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <script type="text/javascript">
-        // fullpage
-        var myFullpage = new fullpage('#fullpage', {
-            css3: true,
-        });
-    </script>
+    <script src="./plugin/modal/jquery.modal.js"></script>
 </body>
 
 </html>

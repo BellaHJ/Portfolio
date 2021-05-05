@@ -1,38 +1,7 @@
 $(document).ready(function () {
-	// Portfolio Scroll Plugin Custom
-	let scroll = false;
+
+	// main visual cover 
 	angle("#main", window);
-	$.mCustomScrollbar.defaults.axis = "yx";
-	$("#portfolio .scrollArea").mCustomScrollbar({
-		theme: "dark",
-		scrollInertia: 200,
-		scrollButtons: false,
-		callbacks: {
-			whileScrolling: function () {
-				if (scroll === true) {
-					this.mcs.topPct === 100 ? myFullpage.moveSectionDown() : scroll = false;
-				}
-			},
-			onTotalScroll: function () {
-				scroll = true;
-			},
-		},
-	});
-	$("#profile .scrollArea").mCustomScrollbar({
-		theme: "dark-2",
-		scrollInertia: 200,
-		scrollButtons: false,
-		callbacks: {
-			whileScrolling: function () {
-				if (scroll === true) {
-					this.mcs.topPct === 100 ? myFullpage.moveSectionDown() : scroll = false;
-				}
-			},
-			onTotalScroll: function () {
-				scroll = true;
-			},
-		},
-	});
 
 	// Main Text Typing Effect
 	var typingBool = false;
@@ -52,30 +21,24 @@ $(document).ready(function () {
 		}
 	}
 
-	$('#portfolio .modalOpen').click(function (event) {
-		event.preventDefault();
+	$('#portfolio .modalOpen').click(function (e) {
+		e.preventDefault();
 		$(this).modal({
-			fadeDuration: 250
+			fadeDuration: 250,
+			clickClose: false,
 		});
 	});
 
 	$('.modal').on($.modal.OPEN, (event, modal) => {
-		fullpage_api.setAllowScrolling(false)
+		$('.blocker').on('click.modal', function () {
+			$.modal.close();
+		})
 	})
 
-	$('.modal').on($.modal.AFTER_CLOSE, (event, modal) => {
-		$('#portfolio').trigger('click');
-		fullpage_api.setAllowScrolling(true)
-	})
-
-	// profile mobile (max-width : 600px) skill folding
-	$('.foldingButton').click(function () {
-		var state = $(this).attr('data-open');
-		if (state == 'true') {
-			$(this).attr('data-open', 'false').text('show').next().removeClass('active');
-		} else {
-			$(this).attr('data-open', 'true').text('hide').next().addClass('active');
-		}
+	// fullpage
+	var myFullpage = new fullpage('#fullpage', {
+		css3: true,
+		scrollOverflow: true,
 	});
 });
 

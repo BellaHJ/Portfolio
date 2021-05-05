@@ -1,12 +1,12 @@
 @media (max-width: 1400px) {
 	#portfolio .grid .grid-item{ width: 29%; margin: 2% }
-	#profile .history ol li .topWrap{flex-direction: column;justify-content:center;}
 }
 
 @media all and (max-width:1024px) {
 	#portfolio .grid .grid-item{ width: 44%; margin: 3% }
-	#profile .inner .group{width:40%;margin:1%;}
-	#profile .inner .photo{display:none;}
+	#profile .fp-scroller{background:#fff;}
+	#profile .inner .group{flex-direction:column;width:40%;margin:1%;}
+	#profile .inner .photo{width:100%;}
 	#profile .inner .skill{width:100%;margin:0;}
 	#profile .inner .history{width:60%;margin:1%;}
 }
@@ -24,35 +24,28 @@
 	#portfolio .grid .grid-item{ width: 94%; margin: 3% }
 	#profile h3{font-size:1.2em;padding: 6px;}
 	#profile .inner{flex-direction: column;padding: 0 20px;}
-	#profile .inner .group{width:100%;}
+	#profile .inner .group{position:relative;width:100%;}
 	#profile .inner .history{width:100%;}
-	#profile .skill ul{
+	#profile .inner .skill{margin-top:420px;}
+	#profile .inner .skill ul{
 		display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
 		justify-content:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;
 		flex-wrap:wrap;-ms-flex-wrap:wrap;align-items:flex-start;
-		margin-top:0;
+		margin-top:0;padding:10px 0;
 	}
-	#profile .skill ul li{width:50%;padding:10px;margin-bottom:10px;}
-	#profile .skill ul li dt{margin-bottom:5px;}
-	#profile .skill ul li dd{padding-top:23px;}
-	#profile .skill ul li dd .count span{bottom:-10px;}
-	#profile .history .scrollArea{margin-top:10px;}
+	#profile .inner .skill ul li{width:50%;padding:10px;margin-bottom:10px;}
+	#profile .inner .skill ul li dt{margin-bottom:5px;}
+	#profile .inner .skill ul li dd{padding-top:23px;}
+	#profile .inner .skill ul li dd .count span{bottom:-10px;}
+	#profile .inner .photo{position:absolute;left:0;top:0;width:100%;height:410px;}
+	#profile .history .listArea{margin-top:30px;}
 }
 @media all and (max-width:480px) {
 	h2{font-size:1.8em;}
 	#main .coverBox { width:300%;}
 	#portfolio .grid .grid-item{ width: 94%; margin: 3% }
-	#profile .skill .foldingButton{display:block;}
 	#profile .skill ul{
 		display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
-		z-index:10;width:100%;background-color:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.15);
-		border-radius:0 0 5px 5px;
-		opacity:0;pointer-events:none;position:absolute;left:0;top:29px;
-		transform:translateY(5%);overflow:hidden;transition: transform .3s ease, opacity .3s ease;
-	}
-	#profile .skill ul.active{
-		pointer-events:initial;transform: translateY(0);opacity: 1;
-
 	}
 	#profile .history .scrollArea {height: calc(100% - 27px);}
 	.modal .infoArea dl{flex-direction: column;}
