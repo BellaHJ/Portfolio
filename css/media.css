@@ -4,7 +4,7 @@
 
 @media all and (max-width:1024px) {
 	#portfolio .grid .grid-item{ width: 44%; margin: 3% }
-	#profile .fp-scroller{background:#fff;}
+	#profile, #profile .fp-scroller{background:#fff;}
 	#profile .inner .group{flex-direction:column;width:40%;margin:1%;}
 	#profile .inner .photo{width:100%;}
 	#profile .inner .skill{width:100%;margin:0;}

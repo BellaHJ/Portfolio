@@ -30,16 +30,18 @@ $(document).ready(function () {
 	});
 
 	$('.modal').on($.modal.OPEN, (event, modal) => {
-		$('.blocker').on('click.modal', function () {
-			$.modal.close();
+		$('.blocker').on('click.modal', function (e) {
+			if ($(e.target).hasClass('blocker')) {
+				$.modal.close();
+			}
 		})
 	})
 
 	// fullpage
-	var myFullpage = new fullpage('#fullpage', {
-		css3: true,
+	new fullpage('#fullpage', {
 		scrollOverflow: true,
 	});
+
 });
 
 // Main visual cover resizing
